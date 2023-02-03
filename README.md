@@ -14,11 +14,11 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
@@ -26,7 +26,7 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _DOM ve film reducer fonksiyonu sizin için hazırlandı, ancak onu redux'a bağlamak size bırakıldı._
 
-- [ ] index.js içinde, bir redux store'u yaratmak için `createStore` yöntemini ve bunu App componentınızda kullanmak için `Provider` bileşenini kullanın.
+- [x] index.js içinde, bir redux store'u yaratmak için `createStore` yöntemini ve bunu App componentınızda kullanmak için `Provider` bileşenini kullanın.
 
 #### Film reducerını bağlamak
 
