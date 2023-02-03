@@ -32,22 +32,22 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _Reducers klasörü içinde movieReducers dosyası var. Burada state halihazırda tanımlı ve bazı başlangıç verileri girilmiş. Burdaki initial state'i reducerımıza bağlayalım._
 
-- [ ] ** movieReducer.js içinde, statein başlangıç değerini initialState olarak atadığımızdan emin olun.** Tüm filmleri burada import edip başlangıç statei olarak store'a koyduğumuza dikkat edin.
+- [x] ** movieReducer.js içinde, statein başlangıç değerini initialState olarak atadığımızdan emin olun.** Tüm filmleri burada import edip başlangıç statei olarak store'a koyduğumuza dikkat edin.
 
-- [ ] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
+- [x] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
       MovieList componentı içerisinde tüm filmleri göstermek için store'a erişip `movies` değerini kullanmalıyız. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
 
-- [ ] **Son olarak MovieHeader, başlık metnini görüntülemek için appTitle'ı kullanır.** Store içerisindeki `appTitle` değerine yine `useSelector` ile erişin ve sayfada düzgün görüntülendiğinden emin olun.
+- [x] **Son olarak MovieHeader, başlık metnini görüntülemek için appTitle'ı kullanır.** Store içerisindeki `appTitle` değerine yine `useSelector` ile erişin ve sayfada düzgün görüntülendiğinden emin olun.
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
-- [ ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir bölüm olduğunu ve movieActions dosyası içerisinde ilgili action oluşturucunun zaten mevcut olduğunu unutmayın.
+- [x] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir bölüm olduğunu ve movieActions dosyası içerisinde ilgili action oluşturucunun zaten mevcut olduğunu unutmayın.
 
-- [ ] **Movie bileşeninde bir silme işlemini tetiklemesi gereken HTML öğesini bulun.** Geçerli filmin id değeri ile deleteMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın. Bu handler içerisinde silme actionunu dispatch ettikten sonra kullanıcıyı push('/movies') komutunu kullanarak tüm filmlere yönlendirin. **(Bu kısımda, useParams ile alıp deleteMovie actionu ile dispatch ettiğiniz id değerinin string olduğunu ve movieReducer içerisinde size sağlanan silme eyleminde buna dikkat etmeniz gerektiğini unutmayın!)**
+- [x] **Movie bileşeninde bir silme işlemini tetiklemesi gereken HTML öğesini bulun.** Geçerli filmin id değeri ile deleteMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın. Bu handler içerisinde silme actionunu dispatch ettikten sonra kullanıcıyı push('/movies') komutunu kullanarak tüm filmlere yönlendirin. **(Bu kısımda, useParams ile alıp deleteMovie actionu ile dispatch ettiğiniz id değerinin string olduğunu ve movieReducer içerisinde size sağlanan silme eyleminde buna dikkat etmeniz gerektiğini unutmayın!)**
 
-- [ ] movieReducer.js'ye bir ADD_MOVIE casei ekleyin.
-- [ ] Bu yeni casein, payload aracılığıyla iletilen yeni film değerlerine sahip bir state döndürmesini sağlayın
-- [ ] movieActions.js'de addMovie için bir action oluşturucu oluşturun.
+- [x] movieReducer.js'ye bir ADD_MOVIE casei ekleyin.
+- [x] Bu yeni casein, payload aracılığıyla iletilen yeni film değerlerine sahip bir state döndürmesini sağlayın
+- [x] movieActions.js'de addMovie için bir action oluşturucu oluşturun.
 - [ ] Bir filmin eklenmesini tetikleyen bileşeni bulun ve addMovie actionunu bağlayın.
 - [ ] addMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
 - [ ] Yeni bir film eklerken id değeri olarak Date.now() kullanın.

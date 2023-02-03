@@ -1,10 +1,13 @@
 import React from 'react';
-
+import { useSelector } from 'react-redux';
 import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
 
+
 const MovieList = (props) => {
-  const movies = [];
+
+  const appTitle = useSelector (store => store.appTitle);
+  const movies = useSelector(store => store.movieReducer.movies);
 
   return (
     <div className="flex-1">
@@ -12,7 +15,7 @@ const MovieList = (props) => {
         <table className="table-auto border-collapse text-left w-full">
           <thead>
             <tr className='border-zinc-200 border-b'>
-              <th className='pl-4'>İsim</th>
+              <th className='pl-4'>{appTitle}</th>
               <th>Yönetmen</th>
               <th>Tür</th>
               <th>Metascore</th>
